@@ -1,14 +1,69 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    </heaad>
     <body>
-        <nav>
-            <ul>
-                <li><a href = "/sweden">Sweden</a></li>
+        <br>
+        <br>
+        <br>
+        <h1>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#loginModal">Dialog Box</button>
+
+            <div class="modal fade" id="loginModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button"class="close" data-dismiss="modal">&times;</button>
+                        <h4 style="color:red;"><span class="glyphicon glyphicon-lock"></span> Login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form">
+                        <div class="form-group">
+                            <label for="usrname"><span class="glyphicon glyphicon-user"></span>Username</label>
+                            <input type="text" class="form-control" name="usrname" placeholder="Enter username">
+                        </div>
+                        <div class="form-group">
+                            <label for="pswd"><span class="glyphicon glyphicon-user"></span>Password</label>
+                            <input type="text" class="form-control" name="pswd" placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-default btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>Cancel</button>
+                        <p>Not a member ? <a href="/signup">Sign Up</a></p>
+                        <p><a href="/forgotpwd">Forgot Password?</a></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </h1>
+        <nav class='navbar navbar-inverse navbar-fixed-top'>
+            <div class='container-fluid'>
+                <div class='navbar-header'>
+                    <a class='navbar-brabd' href='/'>Family Album</a>
+                </div>
+
+           <ul class='nav navbar-nav'>
+               <li class='active'><a href = "/">Home</a></li>
+                <li><a href = "/sweden" >Sweden</a></li>
+                 
                 <li><a href = '/amsterdam'>Amsterdam</a></li>
                 <li><a href = '/paris'>Paris</a></li>
-            </ul>
+                 
+          <ul>
+              </div>
         </nav>
-        <h1>My Family Pictures</h1>
-        <img src = "DSC00583.JPG" width = 800>
+        
+        <img src = "DSC00583.JPG" class="img-responsive" width = 900 height='500'>
 
 
         

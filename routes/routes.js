@@ -1,6 +1,6 @@
 var fs = require('fs');
 var input = __dirname+'/../public';
-console.log(input);
+
 
 
 exports.sweden = function(req, res){
@@ -9,7 +9,7 @@ exports.sweden = function(req, res){
     filearray = fs.readdirSync(input+'/Sweden', ['**.JPG']);
 
     res.render('sweden', {title:"::::: SWEDEN :::::", headline:"Sweden is a Scandinavian nation with thousands of coastal islands and inland lakes, along with vast boreal forests and glaciated mountains. Its principal cities, eastern capital Stockholm and southwestern Gothenburg and Malmö, are all coastal. Stockholm is built on 14 islands. It has more than 50 bridges, as well as the medieval old town, Gamla Stan, royal palaces and museums such as open-air Skansen.", country:"sweden", filearr:filearray})
-    console.log(filearray.length+"array length from routes.js");
+    
 }
 
 exports.amsterdam= function(req, res){
