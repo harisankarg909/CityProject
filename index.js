@@ -9,6 +9,7 @@ app.use(exp.static(__dirname+'/public'));
 app.get('/sweden', routes.sweden);
 app.get('/amsterdam', routes.amsterdam);
 app.get('/paris', routes.paris);
+//app.get('/login', routes.login);
 
 
 var port = process.env.PORT || 3000;
